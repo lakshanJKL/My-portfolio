@@ -2,7 +2,7 @@
 
 Clone this project to your local system
 
-   https://github.com/lakshanJKL/My-portfolio.git
+      https://github.com/lakshanJKL/My-portfolio.git
    
 Or Download and extract the zip file.
 
