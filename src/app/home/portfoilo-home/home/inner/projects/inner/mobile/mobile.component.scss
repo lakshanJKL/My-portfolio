@@ -1,0 +1,122 @@
+$max-width: 100%;
+$bx-width: 220px;
+$bx-height: 270px;
+$title-block-height: 50px;
+
+// *******   max width 1920 **************
+.bx-outer-ex-lg {
+  width: $max-width;
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 42px;
+  overflow-y: auto;
+  margin-top: 40px;
+
+
+  // Custom scrollbar styles
+  &::-webkit-scrollbar {
+    width: 15px; // Width of the scrollbar
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; // Transparent scrollbar track
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.8); // White scrollbar thumb with transparency
+    border-radius: 100px !important; // Rounded scrollbar
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 1); // Fully opaque white on hover
+  }
+
+  scrollbar-width: thin; // Thin scrollbar for Firefox
+  scrollbar-color: rgba(255, 255, 255, 0.8) transparent; // Thumb and track colors for Firefox
+
+}
+// *******   max width 1920 **************
+
+// *******   max width 1440 **************
+.bx-outer {
+  width: $max-width;
+  max-height: 480px;
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax($bx-width, 1fr));
+  gap: 25px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  //padding-right: 20px;
+  padding-left: 42px;
+  overflow-y: auto;
+  // border: 1px solid red;
+
+
+  // Custom scrollbar styles
+  &::-webkit-scrollbar {
+    width: 15px; // Width of the scrollbar
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; // Transparent scrollbar track
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.8); // White scrollbar thumb with transparency
+    border-radius: 100px !important; // Rounded scrollbar
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 1); // Fully opaque white on hover
+  }
+
+  scrollbar-width: thin; // Thin scrollbar for Firefox
+  scrollbar-color: rgba(255, 255, 255, 0.8) transparent; // Thumb and track colors for Firefox
+
+}
+// *******   max width 1440 **************
+
+// *******   max width 412 **************
+.bx-outer-sm {
+  width: $max-width;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // Set to always display 2 columns
+  gap: 10px; // Add spacing between items
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  overflow-y: auto;
+  //border: 1px solid red;
+
+  // Custom scrollbar styles
+  &::-webkit-scrollbar {
+    width: 0; // Width of the scrollbar
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; // Transparent scrollbar track
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.8); // White scrollbar thumb with transparency
+    border-radius: 100px !important; // Rounded scrollbar
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 1); // Fully opaque white on hover
+  }
+
+  scrollbar-width: thin; // Thin scrollbar for Firefox
+  scrollbar-color: rgba(255, 255, 255, 0.8) transparent; // Thumb and track colors for Firefox
+}
+
+// *******   max width 412**************

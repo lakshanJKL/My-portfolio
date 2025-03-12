@@ -1,0 +1,51 @@
+<!-- Large screen (1440px and above) -->
+<div *ngIf="isLargeScreen" class="topper-area">
+  <app-navbar></app-navbar>
+</div>
+<router-outlet *ngIf="isLargeScreen"></router-outlet>
+
+<!-- Medium screen (1024px and below) -->
+<div *ngIf="isMediumScreen" class="topper-area">
+  <app-navbar></app-navbar>
+</div>
+<router-outlet *ngIf="isMediumScreen"></router-outlet>
+<!-- Medium screen (1024px and below) -->
+
+<!-- extra screen (1920px and below) -->
+<div *ngIf="isExtraLargeScreen" class="topper-home-area-ex-lg">
+  <app-navbar></app-navbar>
+</div>
+<router-outlet *ngIf="isExtraLargeScreen"></router-outlet>
+<!-- Medium screen (1920px and below) -->
+
+<!-- extra screen (412px and below) -->
+<div *ngIf="isLowScreen" class="topper-home-area-lw">
+  <div class="text-grp">
+    <span class="text-1 text-capitalize font-weight-light">Hello,  I'm</span><br>
+    <span class="text-2 text-capitalize">Lakshan</span><br>
+   <p class="text-3  font-weight-light">A highly motivated software enthusiast
+     with a passion for crafting user-friendly interfaces and robust applications
+    </p>
+  </div>
+  <div class="btn-grp">
+    <button
+      type="button"
+      class="btn"
+      [ngClass]="{'active-btn': selectedBtn === 'projects'}"
+      (click)="selectProject('projects')"
+    >
+      Projects
+    </button>
+    <button
+      type="button"
+      class="btn"
+      [ngClass]="{'active-btn': selectedBtn === 'about'}"
+      (click)="selectAbout('about')"
+    >
+      About
+    </button>
+  </div>
+
+</div>
+<router-outlet *ngIf="isLowScreen"></router-outlet>
+<!-- Medium screen (412px and below) -->

@@ -1,0 +1,94 @@
+// ------   max width 1440 ----------------------
+.tech-outer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .tech-inner {
+    display: flex;
+    gap: 30px;
+    animation: scroll 100s linear infinite;
+
+    img{
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+
+
+
+/* Smooth scrolling animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-150%);
+  }
+}
+
+// ------   max width 1440 ----------------------
+
+// ------   max width 1024 ----------------------
+.tech-outer-md {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.tech-inner {
+  display: flex;
+  gap: 30px;
+  animation: scroll-md 100s linear infinite;
+}
+
+.tech-inner img {
+  width: 80px;
+  height: 50px ;
+}
+
+/* Smooth scrolling animation */
+@keyframes scroll-md {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-120%);
+  }
+}
+// ------   max width 1024 ----------------------
+
+
+// ------   max width 1920 ----------------------
+.tech-outer-lg {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.tech-inner {
+  display: flex;
+  gap: 40px;
+  animation: scroll-lg 100s linear infinite;
+}
+
+.tech-inner img {
+  width: 80px;
+  height: 80px ;
+}
+
+/* Smooth scrolling animation */
+@keyframes scroll-lg{
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-14%);
+  }
+}
+// ------   max width 1920 ----------------------

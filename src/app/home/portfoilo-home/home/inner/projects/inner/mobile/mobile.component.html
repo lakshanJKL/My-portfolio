@@ -1,0 +1,19 @@
+
+<!-- extra screen (1440px, 1024px, 1920px and below) -->
+<div *ngIf="isLargeScreen || isMediumScreen" class="bx-outer"  >
+  <app-box *ngFor="let list of mobileList" (click)="openPopup(list)" title="{{list.prjTitle}}" bgImage="{{list.bgImg}}"/>
+</div>
+<!-- extra screen (1920px and above) -->
+
+<!-- extra screen (1920px and below) -->
+<div *ngIf="isExtraLargeScreen" class="bx-outer-ex-lg"  >
+  <app-box *ngFor="let list of mobileList" (click)="openPopup(list)" title="{{list.prjTitle}}" bgImage="{{list.bgImg}}"/>
+</div>
+<!-- extra screen (1440px, 1024px, 1920px and above) -->
+
+<!-- extra screen (412 and below) -->
+<div *ngIf="isLowScreen" class="bx-outer-sm"  >
+  <app-box *ngFor="let list of mobileList" (click)="openPopupSM(list)" title="{{list.prjTitle}}" bgImage="{{list.bgImg}}"/>
+</div>
+<!-- extra screen (412 and above) -->
+

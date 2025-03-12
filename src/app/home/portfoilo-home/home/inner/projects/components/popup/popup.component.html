@@ -1,0 +1,96 @@
+
+<!-- ************************ max width 1920px **********************************  -->
+<div *ngIf="isExtraLargeScreen" class="container outer-pup-ex-lg">
+  <div class="title-area">
+     <div class="inner-1">
+       <h2>{{projectTitle}}</h2>
+     </div>
+     <div class="inner-2">
+       <mat-icon (click)="closeBtn()">close</mat-icon>
+     </div>
+
+
+  </div>
+<!--  655 characters only  -->
+  <div class="desc-area">
+    <p>{{projectDesc}}</p>
+  </div>
+  <div class="tech-area">
+     <h3>Technologies</h3>
+     <div class="tech_img">
+       <img *ngFor="let list of imgList" src="{{list.src}}" alt="{{list.techName}}">
+    </div>
+  </div>
+  <div class="git-btn-area">
+    <button class="btn btn-git" (click)="openGithub(gitHubLink)">
+      open in GitHub
+      <img width="22" height="22" src="https://img.icons8.com/glyph-neue/64/FFFFFF/github.png" alt="github"/>
+    </button>
+  </div>
+</div>
+
+<!-- ************************  max width 1920px **********************************  -->
+
+<!-- ************************  max width 1440px 1920px 1024px**********************************  -->
+<div *ngIf="isLargeScreen" class="container outer-pup">
+    <div class="title-area">
+        <div class="inner-1">
+            <h2>{{projectTitle}}</h2>
+        </div>
+        <div class="inner-2">
+            <mat-icon (click)="closeBtn()">close</mat-icon>
+        </div>
+
+
+    </div>
+    <!--  655 characters only  -->
+    <div class="desc-area">
+        <p>{{projectDesc}}</p>
+    </div>
+    <div class="tech-area">
+        <h3>Technologies</h3>
+        <div class="tech_img">
+            <img *ngFor="let list of imgList" src="{{list.src}}" alt="{{list.techName}}">
+        </div>
+    </div>
+    <div class="git-btn-area">
+        <button class="btn btn-git" (click)="openGithub(gitHubLink)">
+            open in GitHub
+            <img width="22" height="22" src="https://img.icons8.com/glyph-neue/64/FFFFFF/github.png" alt="github"/>
+        </button>
+    </div>
+</div>
+
+<!-- ************************  max width 1440px 1920px 1024px**********************************  -->
+
+<!-- ************************  max width 412px**********************************  -->
+<div *ngIf="isLowScreen" class="container outer-pup-sm">
+  <div class="title-area">
+    <div class="inner-1">
+      <h3>{{projectTitle}}</h3>
+    </div>
+    <div class="inner-2">
+      <mat-icon (click)="closeBtn()">close</mat-icon>
+    </div>
+
+
+  </div>
+  <!--  655 characters only  -->
+  <div class="desc-area">
+    <p>{{projectDesc}}</p>
+  </div>
+  <div class="tech-area">
+    <h3>Technologies</h3>
+    <div class="tech_img">
+      <img *ngFor="let list of imgList" src="{{list.src}}" alt="{{list.techName}}">
+    </div>
+  </div>
+  <div class="git-btn-area">
+    <button class="btn btn-git" (click)="openGithub(gitHubLink)">
+      open in GitHub
+      <img width="22" height="22" src="https://img.icons8.com/glyph-neue/64/FFFFFF/github.png" alt="github"/>
+    </button>
+  </div>
+</div>
+
+<!-- ************************  max width 412px**********************************  -->

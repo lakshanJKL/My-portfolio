@@ -1,0 +1,392 @@
+
+<!--ExLarge screen size design width 1440px-->
+<div *ngIf="isExtraLargeScreen" class="outer-ex-lg">
+    <div class="contact-side">
+        <div class="profile-details">
+            <img width="200" height="200"
+                 src="assets/profileImage/profile.jpg"
+                 alt="profile-image">
+            <h2 class="name">H D J Lakshan</h2>
+            <h3 class="national">Sri Lanka</h3>
+        </div>
+        <div class="contact-details">
+            <h2>Contact</h2>
+            <div class="details">
+                <p class="email">
+                    <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/new-post--v1.png" alt="new-post--v1"/>
+                    {{email}}
+                </p>
+                <p class="phone">
+                    <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/phone.png" alt="phone"/>
+                    {{contact_no}}
+                </p>
+                <p class="address">
+                    <img
+                            width="30"
+                            height="30"
+                            src="https://img.icons8.com/parakeet-line/48/FFFFFF/order-delivered.png"
+                            alt="order-delivered"/>
+                    {{address}}
+                </p>
+                <div class="social">
+<!--                    <a href="www.linkedin.com/in/hdj-lakshan-73824924a">-->
+<!--                        <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/linkedin.png" alt="linkedin"/>-->
+<!--                        Linkedin-->
+<!--                    </a>-->
+                    <a href="https://github.com/lakshanJKL">
+                        <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/github--v1.png" alt="github--v1"/>
+                        Github
+                    </a>
+                    <a href="http://wa.me/+94702057054">
+                        <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/whatsapp--v1.png"
+                             alt="whatsapp--v1"/>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-area">
+            <div class="cv-btn">
+<!--                <button mat-flat-button color="primary" (click)="downloadFile('cv')">-->
+<!--                    <mat-icon>download</mat-icon>-->
+<!--                    My CV-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <div class="cover-letter-btn">-->
+<!--                <button mat-flat-button color="primary" (click)="downloadFile('cover-letter')">-->
+<!--                    <mat-icon>download</mat-icon>-->
+<!--                    Cover Letter-->
+<!--                </button>-->
+            </div>
+        </div>
+    </div>
+    <div class="experience-side">
+        <div class="edu-exc">
+            <div class="experience-details">
+                <h2>Experience</h2>
+                <div class="experience-item" *ngFor="let experience of experience">
+                    <h3>{{experience.title}}</h3>
+                    <p class="company">{{experience.company}} | {{experience.duration}}</p>
+                    <p class="description">
+                        {{experience.description}}
+                    </p>
+                </div>
+            </div>
+            <div class="education-details">
+                <h2>Education</h2>
+                <div class="education-item" *ngFor="let education of education">
+                    <h3>{{education.title}}</h3>
+                    <p class="company">{{education.institution}}  {{education.duration}}</p>
+                    <p class="description">
+                        {{education.description}}
+                    </p>
+                </div>
+            </div>
+            <div class="reference">
+                <h2>References</h2>
+                <div class="reference-item" *ngFor="let reference of references">
+                    <h3>{{reference.name}}</h3>
+                    <p class="company">{{reference.position}} | {{reference.company}}</p>
+                    <p class="contact">{{reference.contact}}</p>
+                    <p class="email">{{reference.email}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ExLarge screen size design width 1440px-->
+
+<!--Large screen size design width 1024px-->
+<div *ngIf="isLargeScreen" class="outer">
+  <div class="contact-side">
+    <div class="profile-details">
+      <img width="200" height="200"
+           src="assets/profileImage/profile.jpg"
+           alt="profile-image">
+      <h2 class="name">H D J Lakshan</h2>
+      <h3 class="national">Sri Lanka</h3>
+    </div>
+    <div class="contact-details">
+      <h2>Contact</h2>
+      <div class="details">
+        <p class="email">
+          <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/new-post--v1.png" alt="new-post--v1"/>
+          {{email}}
+        </p>
+        <p class="phone">
+          <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/phone.png" alt="phone"/>
+          {{contact_no}}
+        </p>
+        <p class="address">
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/parakeet-line/48/FFFFFF/order-delivered.png"
+            alt="order-delivered"/>
+          {{address}}
+        </p>
+        <div class="social">
+<!--          <a href="#">-->
+<!--            <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/linkedin.png" alt="linkedin"/>-->
+<!--            Linkedin-->
+<!--          </a>-->
+          <a href="https://github.com/lakshanJKL">
+            <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/github--v1.png" alt="github--v1"/>
+            Github
+          </a>
+          <a href="http://wa.me/+94702057054">
+            <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/whatsapp--v1.png"
+                 alt="whatsapp--v1"/>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-area">
+      <div class="cv-btn">
+<!--        <button mat-flat-button color="primary" (click)="downloadFile('cv')">-->
+<!--          <mat-icon>download</mat-icon>-->
+<!--          My CV-->
+<!--        </button>-->
+<!--      </div>-->
+<!--      <div class="cover-letter-btn">-->
+<!--        <button mat-flat-button color="primary" (click)="downloadFile('cover-letter')">-->
+<!--          <mat-icon>download</mat-icon>-->
+<!--          Cover Letter-->
+<!--        </button>-->
+      </div>
+    </div>
+  </div>
+  <div class="experience-side">
+    <div class="edu-exc">
+      <div class="experience-details">
+        <h2>Experience</h2>
+        <div class="experience-item" *ngFor="let experience of experience">
+          <h3>{{experience.title}}</h3>
+          <p class="company">{{experience.company}} | {{experience.duration}}</p>
+          <p class="description">
+            {{experience.description}}
+          </p>
+        </div>
+      </div>
+      <div class="education-details">
+        <h2>Education</h2>
+        <div class="education-item" *ngFor="let education of education">
+          <h3>{{education.title}}</h3>
+          <p class="company">{{education.institution}}  {{education.duration}}</p>
+          <p class="description">
+            {{education.description}}
+          </p>
+        </div>
+      </div>
+      <div class="reference">
+        <h2>References</h2>
+        <div class="reference-item" *ngFor="let reference of references">
+          <h3>{{reference.name}}</h3>
+          <p class="company">{{reference.position}} | {{reference.company}}</p>
+          <p class="contact">{{reference.contact}}</p>
+          <p class="email">{{reference.email}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Medium screen size design width 768px-->
+<div *ngIf="isMediumScreen" class="medium-outer">
+  <div class="contact-side">
+    <div class="profile-details">
+      <img width="200" height="200"
+           src="assets/profileImage/profile.jpg"
+           alt="profile-image">
+      <h2 class="name">H D J Lakshan</h2>
+      <h3 class="national">Sri Lanka</h3>
+    </div>
+    <div class="contact-details">
+      <h2>Contact</h2>
+      <div class="details">
+        <p class="email">
+          <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/new-post--v1.png" alt="new-post--v1"/>
+          {{email}}
+        </p>
+        <p class="phone">
+          <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/phone.png" alt="phone"/>
+          {{contact_no}}
+        </p>
+        <p class="address">
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/parakeet-line/48/FFFFFF/order-delivered.png"
+            alt="order-delivered"/>
+          {{address}}
+        </p>
+        <div class="social">
+<!--          <a href="#">-->
+<!--            <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/linkedin.png" alt="linkedin"/>-->
+<!--            Linkedin-->
+<!--          </a>-->
+          <a href="https://github.com/lakshanJKL">
+            <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/github--v1.png" alt="github--v1"/>
+            Github
+          </a>
+          <a href="http://wa.me/+94702057054">
+            <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/whatsapp--v1.png"
+                 alt="whatsapp--v1"/>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-area">
+      <div class="cv-btn">
+<!--        <button mat-flat-button color="primary" (click)="downloadFile('cv')">-->
+<!--          <mat-icon>download</mat-icon>-->
+<!--          My CV-->
+<!--        </button>-->
+<!--      </div>-->
+<!--      <div class="cover-letter-btn">-->
+<!--        <button mat-flat-button color="primary" (click)="downloadFile('cover-letter')">-->
+<!--          <mat-icon>download</mat-icon>-->
+<!--          Cover Letter-->
+<!--        </button>-->
+      </div>
+    </div>
+  </div>
+  <div class="experience-side">
+    <div class="edu-exc">
+      <div class="experience-details">
+        <h2>Experience</h2>
+        <div class="experience-item" *ngFor="let experience of experience">
+          <h3>{{experience.title}}</h3>
+          <p class="company">{{experience.company}} | {{experience.duration}}</p>
+          <p class="description">
+            {{experience.description}}
+          </p>
+        </div>
+      </div>
+      <div class="education-details">
+        <h2>Education</h2>
+        <div class="education-item" *ngFor="let education of education">
+          <h3>{{education.title}}</h3>
+          <p class="company">{{education.institution}}  {{education.duration}}</p>
+          <p class="description">
+            {{education.description}}
+          </p>
+        </div>
+      </div>
+      <div class="reference">
+        <h2>References</h2>
+        <div class="reference-item" *ngFor="let reference of references">
+          <h3>{{reference.name}}</h3>
+          <p class="company">{{reference.position}} | {{reference.company}}</p>
+          <p class="contact">{{reference.contact}}</p>
+          <p class="email">{{reference.email}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Small screen size design width 450px-->
+<div *ngIf="isLowScreen" class="small-outer">
+  <div class="profile-details">
+    <img width="200" height="200"
+         src="assets/profileImage/profile.jpg"
+         alt="profile-image">
+    <h2 class="name">H D J Lakshan</h2>
+    <h3 class="national">Sri Lanka</h3>
+  </div>
+  <div class="experience-details">
+    <h2>Experience</h2>
+    <div class="experience-item" *ngFor="let experience of experience">
+      <h3>{{experience.title}}</h3>
+      <p class="company">{{experience.company}}</p>
+      <p class="company">{{experience.duration}}</p>
+      <p class="description">
+        {{experience.description}}
+      </p>
+    </div>
+  </div>
+  <div class="education-details">
+    <h2>Education</h2>
+    <div class="education-item" *ngFor="let education of education">
+      <span>{{education.title}}</span>
+      <p class="company">{{education.institution}}</p>
+      <p class="company">{{education.duration}}</p>
+      <p class="description">
+        {{education.description}}
+      </p>
+    </div>
+  </div>
+  <div class="reference">
+    <h2>References</h2>
+    <div class="items">
+      <div class="reference-item" *ngFor="let reference of references">
+        <h3>{{reference.name}}</h3>
+        <p class="company">{{reference.position}}</p>
+        <p>{{reference.company}}</p>
+        <p>{{reference.country}}</p>
+        <p class="contact">{{reference.contact}}</p>
+        <p class="email">{{reference.email}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="contact-details">
+    <h2>Contact</h2>
+    <div class="details">
+      <p class="inner-info">
+        <img width="30" height="30" src="https://img.icons8.com/ios/50/00000/new-post--v1.png" alt="new-post--v1"/>
+        {{email}}
+      </p>
+      <p class="inner-info">
+        <img width="30" height="30" src="https://img.icons8.com/ios/50/00000/phone.png" alt="phone"/>
+       {{contact_no}}
+      </p>
+      <div class="inner-info">
+        <img
+          width="30"
+          height="30"
+          src="https://img.icons8.com/parakeet-line/48/00000/order-delivered.png"
+          alt="order-delivered"/>
+        <p>{{address}}</p>
+      </div>
+      <div class="social">
+<!--        <a href="#">-->
+<!--          <img width="30" height="30" src="https://img.icons8.com/ios/50/00000/linkedin.png" alt="linkedin"/>-->
+<!--          Linkedin-->
+<!--        </a>-->
+        <a href="https://github.com/lakshanJKL">
+          <img width="30" height="30" src="https://img.icons8.com/ios/50/00000/github--v1.png" alt="github--v1"/>
+          Github
+        </a>
+        <a href="http://wa.me/+94702057054">
+          <img width="30" height="30" src="https://img.icons8.com/ios/50/00000/whatsapp--v1.png" alt="whatsapp--v1"/>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+        <div class="button-area">
+          <div class="cv-btn">
+<!--            <button mat-flat-button  (click)="downloadFile('cv')">-->
+<!--              <mat-icon>download</mat-icon>-->
+<!--              My CV-->
+<!--            </button>-->
+<!--          </div>-->
+<!--          <div class="cover-letter-btn">-->
+<!--            <button mat-flat-button  (click)="downloadFile('cover-letter')">-->
+<!--              <mat-icon>download</mat-icon>-->
+<!--              Cover Letter-->
+<!--            </button>-->
+          </div>
+        </div>
+      </div>
+  </div>
+
+

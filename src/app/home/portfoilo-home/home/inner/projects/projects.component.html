@@ -1,0 +1,20 @@
+
+<!--responsive width size => 1440px-->
+<div *ngIf="isLargeScreen" class="container topper-prj-area">
+  <app-lang-navbar *ngIf="isLargeScreen"/>
+</div>
+<router-outlet *ngIf="isLargeScreen"/>
+<!--responsive width size => 1440px-->
+<!--responsive width size => 412px-->
+<div *ngIf="isLowScreen" class="container topper-prj-area-sm">
+  <app-lang-navbar *ngIf="isLowScreen"/>
+</div>
+<router-outlet *ngIf="isLowScreen"/>
+<!--responsive width size => 412px-->
+<!--responsive width size => 1024px-->
+<!--responsive width size => 1920px-->
+<div *ngIf="isExtraLargeScreen" class="topper-prj-area-ex-lg">
+    <app-lang-navbar *ngIf="isExtraLargeScreen"/>
+</div>
+<router-outlet *ngIf="isExtraLargeScreen"/>
+

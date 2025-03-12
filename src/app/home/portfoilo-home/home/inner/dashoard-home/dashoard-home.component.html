@@ -1,0 +1,74 @@
+
+<!-- ------ max width 1440 ----------- -->
+<div *ngIf="isLargeScreen" class="outer-home">
+  <div class="top-grp">
+     <div class="grp-l">
+       <img src="../../../../../../assets/home/businessman.png" alt="businessman">
+     </div>
+     <div class="grp-r">
+        <span class="text-1 text-capitalize font-weight-light">Hello,  I'm </span><br><br>
+        <span class="text-2 text-capitalize ">Lakshan</span><br><br>
+       <p class="text-3 text-capitalize font-weight-light">Welcome to my site! A highly motivated software enthusiast
+         with a passion for crafting user-friendly interfaces and robust applications. I’m eager to contribute to
+         innovative IT projects, and here are my <span class="text-4" routerLink="/main/projects/all">projects</span>.</p>
+        <br>
+       <button type="button" class="btn more-btn" (click)="moreBtn()">More&nbsp; <mat-icon class="ml-10">keyboard_double_arrow_right</mat-icon></button>
+     </div>
+  </div>
+  <div class="bottom-grp">
+    <app-marquee-tech></app-marquee-tech>
+  </div>
+</div>
+<!-- ------ max width 1440 ----------- -->
+
+<!-- ------ max width 1024 ----------- -->
+<div *ngIf="isMediumScreen" class="outer-home-md">
+  <div class="top-grp-md">
+    <div class="grp-l-md">
+      <img src="../../../../../../assets/home/businessman.png" alt="businessman">
+    </div>
+    <div class="grp-r-md">
+      <span class="text-1 text-capitalize font-weight-light">Hello,  I'm </span><br><br>
+      <span class="text-2 text-capitalize ">Lakshan</span><br><br>
+      <p class="text-3 text-capitalize font-weight-light">Welcome to my site! A highly motivated software enthusiast
+        with a passion for crafting user-friendly interfaces and robust applications. I’m eager to contribute to
+        innovative IT projects, and here are my <span class="text-4" routerLink="/main/projects/all">projects</span>.</p>
+      <br>
+      <button type="button" class="btn more-btn-md" (click)="moreBtn()">More&nbsp; <mat-icon class="ml-10">keyboard_double_arrow_right</mat-icon></button>
+    </div>
+  </div>
+  <div class="bottom-grp-md">
+    <app-marquee-tech></app-marquee-tech>
+  </div>
+</div>
+<!-- ------ max width 1024-------- -->
+
+<!-- ------ max width 1920 ----------- -->
+<div *ngIf="isExtraLargeScreen" class="outer-home-ex-lg">
+  <div class="top-grp-lg">
+    <div class="grp-l-lg">
+      <img src="../../../../../../assets/home/businessman.png" alt="businessman">
+    </div>
+    <div class="grp-r-lg">
+      <span class="text-1 text-capitalize font-weight-light">Hello,  I'm </span><br><br><br>
+      <span class="text-2 text-capitalize ">Lakshan</span><br><br>
+      <p class="text-3 text-capitalize font-weight-light">Welcome to my site! A highly motivated software enthusiast
+        with a passion for crafting user-friendly interfaces and robust applications. I’m eager to contribute to
+        innovative IT projects, and here are my <span class="text-4" routerLink="/main/projects/all">projects</span>.</p>
+      <br>
+      <button type="button" class="btn more-btn-lg" (click)="moreBtn()">More...</button>
+    </div>
+  </div>
+  <div class="bottom-grp-lg">
+    <app-marquee-tech></app-marquee-tech>
+  </div>
+</div>
+<!-- ------ max width 1920-------- -->
+
+<!-- ------ max width 412-------- -->
+<div *ngIf="isLowScreen" class="container topper-home-area-sm">
+  <app-lang-navbar *ngIf="isLowScreen"/>
+</div>
+<router-outlet *ngIf="isLowScreen"/>
+<!-- ------ max width 412-------- -->
+

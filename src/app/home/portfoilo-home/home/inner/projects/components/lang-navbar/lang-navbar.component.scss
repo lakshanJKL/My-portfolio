@@ -1,0 +1,141 @@
+$width: 100vw;
+$height: 100vh;
+
+// width 1920px *************************
+.outer-nav-ex-lg {
+  width: $width;
+  height: $height;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  align-items: center;
+  //padding: 25px;
+
+  .nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    .lst {
+      width: 120px;
+      height: 50px;
+      color: white;
+      font-size: 22px;
+      font-family: "Roboto", serif;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      border: 2px solid transparent;
+      margin: 0 10px;
+      padding: 15px 25px;
+
+      &.active-btn {
+        cursor: pointer;
+        border: 2px solid white;
+        padding: 15px 20px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        border: 2px solid lightgray;
+        padding: 15px 20px;
+      }
+    }
+  }
+}
+// width 1920px *************************
+
+// width 1440px, 1024px, 1920px *************************
+.outer-nav {
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  .nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    .lst {
+      width: 120px;
+      height: 40px;
+      color: white;
+      font-size: 18px;
+      font-family: "Roboto", serif;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      border: 2px solid transparent;
+      margin: 0 10px;
+      padding: 15px 25px;
+
+      &.active-btn {
+        cursor: pointer;
+        border: 2px solid white;
+      }
+
+      &:hover {
+        cursor: pointer;
+        border: 2px solid lightgray;
+      }
+    }
+  }
+}
+// width 1440px, 1024px, 1920px *************************
+
+// width 412px *************************
+.outer-nav-sm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-top: 25px;
+
+  .nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+
+  }
+
+  .lst {
+    width: 70px;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+    font-family: "Roboto", serif;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+
+    &.active-btn {
+      cursor: pointer;
+      background-color: #eae9e9;
+      color: black;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: #eae9e9;
+      color: black;
+    }
+  }
+}
+// width 412px *************************

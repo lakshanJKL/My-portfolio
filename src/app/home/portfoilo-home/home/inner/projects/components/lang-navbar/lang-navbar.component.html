@@ -1,0 +1,111 @@
+
+<!--********* width 1920px  ***********-->
+<div *ngIf="isExtraLargeScreen" class="outer-nav-ex-lg">
+    <ul class="nav-ul">
+        <li class="lst"
+            [ngClass]="{'active-btn': selectedBtn === 'All'}"
+            (click)="selected('All')">
+            All
+        </li>
+        <li class="lst"
+            [ngClass]="{'active-btn': selectedBtn === 'Java'}"
+            (click)="selected('Java')">
+            Java
+        </li>
+        <li class="lst"
+            [ngClass]="{'active-btn': selectedBtn === 'Angular'}"
+            (click)="selected('Angular')">
+            Angular
+        </li>
+        <li class="lst"
+            [ngClass]="{'active-btn': selectedBtn === 'Rust'}"
+            (click)="selected('Rust')">
+            Rust
+        </li>
+        <li class="lst"
+            [ngClass]="{'active-btn': selectedBtn === 'UIUX'}"
+            (click)="selected('UIUX')">
+            UIUX
+        </li>
+        <li class="lst"
+            [ngClass]="{'active-btn': selectedBtn === 'Mobile'}"
+            (click)="selected('Mobile')">
+            Mobile
+        </li>
+    </ul>
+</div>
+<!--********* width 1920px  ***********-->
+
+<!--********* width 1440px, 1024px, 1920px  ***********-->
+<div *ngIf="isLargeScreen" class="outer-nav">
+  <ul class="nav-ul">
+    <li class="lst"
+        [ngClass]="{'active-btn': selectedBtn === 'All'}"
+        (click)="selected('All')">
+      All
+    </li>
+    <li class="lst"
+        [ngClass]="{'active-btn': selectedBtn === 'Java'}"
+        (click)="selected('Java')">
+      Java
+    </li>
+    <li class="lst"
+        [ngClass]="{'active-btn': selectedBtn === 'Angular'}"
+        (click)="selected('Angular')">
+      Angular
+    </li>
+    <li class="lst"
+        [ngClass]="{'active-btn': selectedBtn === 'Rust'}"
+        (click)="selected('Rust')">
+      Rust
+    </li>
+    <li class="lst"
+        [ngClass]="{'active-btn': selectedBtn === 'UIUX'}"
+        (click)="selected('UIUX')">
+      UIUX
+    </li>
+    <li class="lst"
+        [ngClass]="{'active-btn': selectedBtn === 'Mobile'}"
+        (click)="selected('Mobile')">
+      Mobile
+    </li>
+  </ul>
+</div>
+<!--********* width 1440px, 1024px, 1920px  ***********-->
+
+<!--********* width 412px ***********-->
+<div *ngIf="isLowScreen" class="outer-nav-sm">
+  <ul class="nav-ul">
+    <li class="lst"
+        [ngClass]="{'active-btn': selectedBtn === 'All'}"
+        (click)="selected('All')">
+      All
+    </li>
+    <li class="lst"
+        [ngClass]="{'active-btn': selectedBtn === 'Java'}"
+        (click)="selected('Java')">
+      Java
+    </li>
+    <li class="lst"
+        [ngClass]="{'active-btn': selectedBtn === 'Angular'}"
+        (click)="selected('Angular')">
+      Angular
+    </li>
+    <li class="lst"
+        [ngClass]="{'active-btn': selectedBtn === 'Rust'}"
+        (click)="selected('Rust')">
+      Rust
+    </li>
+    <li class="lst"
+        [ngClass]="{'active-btn': selectedBtn === 'UIUX'}"
+        (click)="selected('UIUX')">
+      UIUX
+    </li>
+    <li class="lst"
+        [ngClass]="{'active-btn': selectedBtn === 'Mobile'}"
+        (click)="selected('Mobile')">
+      Mobile
+    </li>
+  </ul>
+</div>
+<!--********* width 412px ***********-->

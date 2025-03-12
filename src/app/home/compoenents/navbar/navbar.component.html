@@ -1,0 +1,62 @@
+<div *ngIf="isLargeScreen" class="container nav-line" @navbar>
+    <ul class="nav-line">
+        <li
+                class="li"
+                routerLink="/main/home"
+                [class.active]="isActive('/main/home/all')"
+                [@activeLink]="isActive('/main/home/all') ? 'active' : 'inactive'"
+        >
+            Home
+        </li>
+        <li class="dot">•</li>
+        <li
+                class="li"
+                routerLink="/main/projects"
+                [class.active]="isActive('/main/projects/all')"
+                [@activeLink]="isActive('/main/projects/all') ? 'active' : 'inactive'"
+        >
+            Projects
+        </li>
+        <li class="dot">•</li>
+        <li
+                class="li"
+                routerLink="/main/about"
+                [class.active]="isActive('/main/about')"
+                [@activeLink]="isActive('/main/about') ? 'active' : 'inactive'"
+        >
+            About
+        </li>
+    </ul>
+</div>
+
+<!-- Extra Large Screen Layout -->
+<div *ngIf="isExtraLargeScreen" class="container nav-line-ex-lg" @navbar>
+    <ul class="nav-line">
+        <li
+                class="li"
+                routerLink="/main/home"
+                [class.active]="isActive('/main/home/all')"
+                [@activeLink]="isActive('/main/home/all') ? 'active' : 'inactive'"
+        >
+            Home
+        </li>
+        <li class="dot">•</li>
+        <li
+                class="li"
+                routerLink="/main/projects"
+                [class.active]="isActive('/main/projects/all')"
+                [@activeLink]="isActive('/main/projects/all') ? 'active' : 'inactive'"
+        >
+            Projects
+        </li>
+        <li class="dot">•</li>
+        <li
+                class="li"
+                routerLink="/main/about"
+                [class.active]="isActive('/main/about')"
+                [@activeLink]="isActive('/main/about') ? 'active' : 'inactive'"
+        >
+            About
+        </li>
+    </ul>
+</div>
