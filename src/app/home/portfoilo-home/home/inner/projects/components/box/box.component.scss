@@ -5,7 +5,7 @@ $bx-sm-height: 140px;
 $bx-height: 220px;
 $title-block-height: 50px;
 
-// ********** 1440, 1920 1024 ************************************
+// ********** 1440, 1024 ************************************
 .box-bx {
   width: $bx-width;
   height: $bx-height;
@@ -61,7 +61,66 @@ $title-block-height: 50px;
     opacity: 0.75;
   }
 }
-// ********** 1440, 1920 1024 ************************************
+// ********** 1440,  1024 ************************************
+// ********** 1920 ************************************
+.box-bx-ex-lg {
+  width: 450px;
+  height: 300px;
+  border: 1.5px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("/assets/project/java/java.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  transition: transform 1s ease, color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+
+    h2 {
+      color: white;
+      transition: color 0.5s ease;
+    }
+
+    .title-bx {
+      opacity: 0.5;
+      transition: color 1s ease;
+    }
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    color: transparent;
+  }
+
+  .title-bx {
+    color: #000000;
+    background-color: white;
+    font-size: 24px;
+    width: $max-width;
+    height: $title-block-height;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    opacity: 0.75;
+  }
+}
+// ********** 1920 ************************************
+
+
 
 //********  412px ************************************
 .box-bx-sm {

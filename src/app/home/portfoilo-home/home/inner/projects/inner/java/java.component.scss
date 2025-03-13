@@ -123,3 +123,41 @@ $title-block-height: 50px;
 }
 
 // *******   max width 412**************
+// *******   max width 1920 **************
+.bx-outer-ex-lg {
+  width: $max-width;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  padding: 20px 150px;
+  overflow-y: auto;
+  // border: 1px solid red;
+
+
+  // Custom scrollbar styles
+  &::-webkit-scrollbar {
+    width: 15px; // Width of the scrollbar
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; // Transparent scrollbar track
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.8); // White scrollbar thumb with transparency
+    border-radius: 100px !important; // Rounded scrollbar
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 1); // Fully opaque white on hover
+  }
+
+  scrollbar-width: thin; // Thin scrollbar for Firefox
+  scrollbar-color: rgba(255, 255, 255, 0.8) transparent; // Thumb and track colors for Firefox
+
+}
+// *******   max width 1920**************
