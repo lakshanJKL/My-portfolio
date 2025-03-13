@@ -53,7 +53,7 @@ export class RustComponent implements OnInit{
       // project 1 --------------------------
       {
         prjTitle: "Flavora Api",
-        gitHubLink:"https://github.com/Cinraa-Dev-Official/flavora-api",
+        gitHubLink:"https://github.com/lakshanJKL/Flavora-api",
         bgImg:"/assets/project/rust/recipe.jpeg",
         desc:"Flavora is a dynamic recipe marketplace app that connects buyers and sellers of exclusive recipes. Chefs," +
           " food creators, and home cooks can sell their unique recipes, while buyers can discover and purchase " +
@@ -88,7 +88,7 @@ export class RustComponent implements OnInit{
       // project 2 --------------------------
       {
         prjTitle: "ST-LMS",
-        gitHubLink:"https://github.com/Cinraa-Dev-Official/ST-LMS",
+        gitHubLink:"https://github.com/lakshanJKL/ST-LMS",
         bgImg:"/assets/project/rust/student.jpg",
         desc:"ST-LMS project revamped to use SeaORM and PostgreSQL, created as a personal learning project",
 

@@ -88,7 +88,7 @@ export class AngularComponent implements OnInit{
       // project 2 --------------------------
       {
         prjTitle: "Vibe Clothing",
-        gitHubLink:"https://github.com/vibe-web-dev/vibeClothing_admin",
+        gitHubLink:"https://github.com/lakshanJKL/Vibe-Clothing-Admin",
         bgImg:"/assets/project/angular/clothe.jpg",
         desc:"The Vibe Clothing Admin Panel is an advanced Angular project designed to streamline the management of " +
           "customers, suppliers, departments, items, and all other aspects of a clothing business. This admin panel " +

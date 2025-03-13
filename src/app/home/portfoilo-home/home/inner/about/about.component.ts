@@ -92,7 +92,7 @@ export class AboutComponent {
     {
       name: 'Hasika Sandaruwan',
       position: 'Senior Software Engineer',
-      company: 'Seekers Cloud(PVT) Ltd.',
+      company: 'Seekers Cloud(PVT) Ltd',
       country: 'Sri Lanka',
       contact: '+94 714 911 257',
       email: 'contact@seekerscloud.com'
@@ -100,7 +100,7 @@ export class AboutComponent {
     {
       name: 'Shayan Ariyasinghe',
       position: 'Software Engineer',
-      company: 'Aio IT Solution (PVT) Ltd.',
+      company: 'Aio IT Solution (PVT) Ltd',
       country: 'Sri Lanka',
       contact: '+94 77 895 4356',
       email: 'Sheha.rashod.ariyasinghe@gmail.com'

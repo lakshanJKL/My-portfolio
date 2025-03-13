@@ -177,7 +177,7 @@ export class AllComponent implements OnInit {
       // project 5 --------------------------
       {
         prjTitle: "Flavora Api",
-        gitHubLink: "https://github.com/Cinraa-Dev-Official/flavora-api",
+        gitHubLink: "https://github.com/lakshanJKL/Flavora-api",
         bgImg: "/assets/project/rust/recipe.jpeg",
         isBool: false,
         desc: "Flavora is a dynamic recipe marketplace app that connects buyers and sellers of exclusive recipes. Chefs," +
@@ -214,7 +214,7 @@ export class AllComponent implements OnInit {
       // project 6 --------------------------
       {
         prjTitle: "Vibe Clothing",
-        gitHubLink: "https://github.com/vibe-web-dev/vibeClothing_admin",
+        gitHubLink: "https://github.com/lakshanJKL/Vibe-Clothing-Admin",
         bgImg: "/assets/project/angular/clothe.jpg",
         isBool: false,
         desc: "The Vibe Clothing Admin Panel is an advanced Angular project designed to streamline the management of " +
@@ -251,7 +251,7 @@ export class AllComponent implements OnInit {
       // project 7 --------------------------
       {
         prjTitle: "ST-LMS",
-        gitHubLink: "https://github.com/Cinraa-Dev-Official/ST-LMS",
+        gitHubLink: "https://github.com/lakshanJKL/ST-LMS",
         bgImg: "/assets/project/rust/student.jpg",
         isBool: false,
         desc: "ST-LMS project revamped to use SeaORM and PostgreSQL, created as a personal learning project",
